@@ -9,6 +9,11 @@ import android.view.View;
 
 import com.mydo.demo.R;
 
+/**
+ * @author: LiBing.
+ * @date: 2017/10/26.
+ * @version: V1.0.0.
+ */
 public abstract class DataBindingActivity<B extends ViewDataBinding> extends AppCompatActivity {
 
     public Context context;
@@ -22,8 +27,13 @@ public abstract class DataBindingActivity<B extends ViewDataBinding> extends App
         mViewBinding = DataBindingUtil.bind(rootView);
         setContentView(rootView);
         context = this;
+        initPresenter();
         initView();
     }
+
+    protected void initPresenter() {
+    }
+
 
     public abstract int getLayoutId();
 

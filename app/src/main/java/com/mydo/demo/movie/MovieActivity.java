@@ -1,14 +1,12 @@
-package com.mydo.demo;
+package com.mydo.demo.movie;
 
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 
+import com.mydo.demo.R;
 import com.mydo.demo.base.BaseActivity;
 import com.mydo.demo.databinding.ActivityLayoutOptimizeBinding;
 import com.mydo.demo.entity.Movie;
-import com.mydo.demo.movie.MovieContract;
-import com.mydo.demo.movie.MovieModel;
-import com.mydo.demo.movie.MoviePresenter;
 import com.mydo.demo.util.ImageUtil;
 import com.mydo.demo.util.LogUtil;
 
@@ -17,7 +15,7 @@ import com.mydo.demo.util.LogUtil;
  * @date: 2017/10/26.
  * @version: V1.0.0.
  */
-public class LayoutOptimizeActivity extends BaseActivity<MoviePresenter, MovieModel, ActivityLayoutOptimizeBinding> implements MovieContract.MovieView {
+public class MovieActivity extends BaseActivity<MoviePresenter, MovieModel, ActivityLayoutOptimizeBinding> implements MovieContract.MovieView {
 
 
     @Override

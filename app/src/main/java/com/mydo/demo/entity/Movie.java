@@ -1,4 +1,4 @@
-package com.mydo.demo.model;
+package com.mydo.demo.entity;
 
 import java.util.List;
 

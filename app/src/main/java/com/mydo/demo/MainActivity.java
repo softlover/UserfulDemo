@@ -11,6 +11,11 @@ import java.util.List;
 
 import dalvik.system.DexFile;
 
+/**
+ * @author: LiBing.
+ * @date: 2017/10/26.
+ * @version: V1.0.0.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override

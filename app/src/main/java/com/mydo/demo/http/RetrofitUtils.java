@@ -3,16 +3,16 @@ package com.mydo.demo.http;
 
 import com.mydo.demo.DemoApplication;
 import com.mydo.demo.loader.ObjectLoader;
-import com.mydo.demo.model.Movie;
+import com.mydo.demo.entity.Movie;
 
 import io.reactivex.Observable;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Function;
 
 /**
- * 网络请求类
- *
- * @author: Created by LiBing on 2017/10/26.
+ * 数据返回类
+ * @author: LiBing.
+ * @date: 2017/10/26.
  * @version: V1.0.0.
  */
 public class RetrofitUtils extends ObjectLoader{

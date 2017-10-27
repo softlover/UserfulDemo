@@ -2,10 +2,9 @@ package com.mydo.demo;
 
 import android.app.Application;
 
-import com.mydo.demo.contant.DemoContant;
-import com.mydo.demo.contant.UrlConstant;
+import com.mydo.demo.constant.DemoConstant;
+import com.mydo.demo.constant.UrlConstant;
 import com.mydo.demo.http.ApiService;
-import com.mydo.demo.http.OkHttpInterceptor;
 
 import java.util.concurrent.TimeUnit;
 
@@ -47,8 +46,8 @@ public class DemoApplication extends Application {
         HttpLoggingInterceptor logInterceptor = new HttpLoggingInterceptor();
         logInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                .readTimeout(DemoContant.SERVERCONNECTTTIME, TimeUnit.SECONDS)
-                .connectTimeout(DemoContant.SERVERCONNECTTTIME, TimeUnit.SECONDS)
+                .readTimeout(DemoConstant.SERVERCONNECTTTIME, TimeUnit.SECONDS)
+                .connectTimeout(DemoConstant.SERVERCONNECTTTIME, TimeUnit.SECONDS)
                 .addInterceptor(logInterceptor)
                 .build();
 
