@@ -10,12 +10,13 @@ import com.mydo.demo.R;
 
 
 /**
+ * 图片加载类
  * @author: LiBing.
  * @date: 2017/10/26.
  * @version: V1.0.0.
  */
 
-public class ImageUtis {
+public class ImageUtil {
 
     public static void loadImage(Context context, String url, ImageView view, int res){
         Glide.with(context).load(url).placeholder(R.mipmap.ic_launcher).diskCacheStrategy(DiskCacheStrategy.ALL)/*.override(width, width)*/.into(view);

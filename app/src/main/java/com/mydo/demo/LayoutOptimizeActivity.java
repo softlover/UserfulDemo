@@ -1,14 +1,14 @@
 package com.mydo.demo;
 
 import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.View;
 
 import com.mydo.demo.base.BaseActivity;
 import com.mydo.demo.databinding.ActivityLayoutOptimizeBinding;
 import com.mydo.demo.http.RetrofitUtils;
 import com.mydo.demo.model.Movie;
-import com.mydo.demo.util.ImageUtis;
+import com.mydo.demo.util.ImageUtil;
+import com.mydo.demo.util.LogUtil;
 
 import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
@@ -40,10 +40,10 @@ public class LayoutOptimizeActivity extends BaseActivity<ActivityLayoutOptimizeB
 
            @Override
            public void onNext(@NonNull Movie movie) {
-               Log.d("syso", movie.getTitle() + "\n" + movie.getSubjects().get(0).getImages().getSmall());
+               LogUtil.e(movie.getTitle() + "\n" + movie.getSubjects().get(0).getImages().getSmall());
 
                String url = movie.getSubjects().get(0).getImages().getSmall();
-               ImageUtis.loadImage(context, url, mViewBinding.bottomImg, 0);
+               ImageUtil.loadImage(context, url, mViewBinding.bottomImg, 0);
            }
 
            @Override

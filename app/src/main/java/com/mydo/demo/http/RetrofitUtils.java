@@ -1,8 +1,6 @@
 package com.mydo.demo.http;
 
 
-import android.util.Log;
-
 import com.mydo.demo.DemoApplication;
 import com.mydo.demo.loader.ObjectLoader;
 import com.mydo.demo.model.Movie;
@@ -10,9 +8,6 @@ import com.mydo.demo.model.Movie;
 import io.reactivex.Observable;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Function;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 /**
  * 网络请求类
