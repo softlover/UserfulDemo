@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/activity_layout_optimize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/item_bg"
+        android:divider="@drawable/divider"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        >
+
+
+        <include
+            android:id="@+id/head_layout"
+            layout="@layout/head_layout"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/personal_dingdan"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/all_enter"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="我的账单"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/personal_quan"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/all_enter"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="我的卡券"
+            android:textSize="16sp"
+            />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/personal_help"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/all_enter"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="帮助反馈"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/personal_settings"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/all_enter"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="设置"
+            android:textSize="16sp"
+            />
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/textview_linespace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="我的账单\n我的卡券\n设置\n帮助反馈"
+            android:textSize="16sp"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            >
+
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/bottom_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+</layout>
