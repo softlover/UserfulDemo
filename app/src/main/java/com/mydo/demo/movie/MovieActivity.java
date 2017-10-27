@@ -15,7 +15,7 @@ import com.mydo.demo.util.LogUtil;
  * @date: 2017/10/26.
  * @version: V1.0.0.
  */
-public class MovieActivity extends BaseActivity<MoviePresenter, MovieModel, ActivityLayoutOptimizeBinding> implements MovieContract.MovieView {
+public class MovieActivity extends BaseActivity<MoviePresenter, ActivityLayoutOptimizeBinding> implements MovieContract.MovieView {
 
 
     @Override
@@ -60,4 +60,6 @@ public class MovieActivity extends BaseActivity<MoviePresenter, MovieModel, Acti
     public void showError() {
 
     }
+
+
 }

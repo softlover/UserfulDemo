@@ -2,6 +2,12 @@ package com.mydo.demo.movie;
 
 import com.mydo.demo.base.ResultLisenter;
 import com.mydo.demo.entity.Movie;
+import com.mydo.demo.http.RetrofitUtils;
+import com.mydo.demo.util.LogUtil;
+
+import io.reactivex.Observer;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.disposables.Disposable;
 
 /**
  * @author: LiBing.
@@ -17,7 +23,7 @@ public class MoviePresenter extends MovieContract.MoviePresenter {
             return;
         }
 
-        movieView.showLoading();
+       /* movieView.showLoading();
 
         mModel.listMovieData(position, type, new ResultLisenter() {
             @Override
@@ -29,6 +35,33 @@ public class MoviePresenter extends MovieContract.MoviePresenter {
             @Override
             public void onError() {
                 movieView.hideLoading();
+            }
+        });*/
+
+        RetrofitUtils.getInstance().listNewsData(2, 1).subscribe(new Observer<Movie>() {
+            @Override
+            public void onSubscribe(@NonNull Disposable d) {
+                LogUtil.e("onSubscribe");
+            }
+
+            @Override
+            public void onNext(@NonNull Movie movie) {
+                LogUtil.e("onNext");
+                movieView.hideLoading();
+                if(movie != null){
+                    movieView.setMovie(movie);
+                }
+            }
+
+            @Override
+            public void onError(@NonNull Throwable e) {
+                LogUtil.e("onError");
+                movieView.hideLoading();
+            }
+
+            @Override
+            public void onComplete() {
+                LogUtil.e("onComplete");
             }
         });
     }

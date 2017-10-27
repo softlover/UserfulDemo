@@ -8,19 +8,19 @@ import java.lang.ref.WeakReference;
  * @version: V1.0.0.
  */
 
-public abstract class BasePresenter<M, V> {
-    public M mModel;
+public abstract class BasePresenter</*M,*/ V> {
+//    public M mModel;
 
     private V mView;
 
     public WeakReference<V> mViewRef;
 
 
-    public void attachModelView(M pModel, V pView) {
+    public void attachModelView(/*M pModel,*/ V pView) {
 
         mViewRef = new WeakReference<V>(pView);
 
-        this.mModel = pModel;
+//        this.mModel = pModel;
     }
 
 

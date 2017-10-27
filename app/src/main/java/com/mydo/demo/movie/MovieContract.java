@@ -22,7 +22,7 @@ public interface MovieContract {
         void listMovieData(int position, int type, ResultLisenter resultLisenter);
     }
 
-    abstract class MoviePresenter extends BasePresenter<MovieModel, MovieView> {
+    abstract class MoviePresenter extends BasePresenter</*MovieModel, */MovieView> {
         public abstract void listMovieData(int position, int type);
     }
 
