@@ -17,10 +17,6 @@ import android.view.ViewGroup;
 
 public class BaseFragment extends Fragment {
 
-    public BaseFragment() {
-        super();
-    }
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
