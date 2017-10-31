@@ -107,12 +107,5 @@
 
         </ScrollView>
 
-        <ImageView
-            android:id="@+id/bottom_img"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_margin="10dp"
-            />
-
     </LinearLayout>
 </layout>

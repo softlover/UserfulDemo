@@ -17,7 +17,7 @@ import com.mydo.demo.R;
 public abstract class DataBindingActivity<B extends ViewDataBinding> extends AppCompatActivity {
 
     public Context context;
-    public B mViewBinding;
+    public B mViewBinding = null;
 
 
     @Override

@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.mydo.demo">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
 
     <application
@@ -16,25 +16,63 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LayoutOptimizeActivity">
+        <activity android:name=".MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <!--
-           <activity android:name=".LayoutOptimizeActivity"
-                  android:label="布局优化"
-                  android:configChanges="orientation"
-           />
-        -->
+
+        <activity android:name=".base.BaseActivity">
+            <!--  <intent-filter>
+                  <action android:name="android.intent.action.MAIN"/>
+                  <category android:name="android.intent.category.SAMPLE_CODE"/>
+              </intent-filter>-->
+        </activity>
+
 
         <activity
-            android:name=".RecyclerViewActivity"
+            android:name=".activity.MVPActivity"
             android:configChanges="orientation"
-            android:label="RecyclerView的多功能使用"/>
-        <activity android:name=".base.BaseActivity"/>
+            android:label="@string/mvp_text">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.RecyclerViewActivity"
+            android:configChanges="orientation"
+            android:label="@string/recyclerview_text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.OptimizedLayoutActivity"
+            android:configChanges="orientation"
+            android:label="@string/optimizedlayout_text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.AlibabaVlayoutActivity"
+            android:configChanges="orientation"
+            android:label="@string/vlayout_text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
 
     </application>
 

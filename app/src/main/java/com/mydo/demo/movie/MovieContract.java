@@ -11,7 +11,6 @@ import com.mydo.demo.entity.Movie;
  * @date: 2017/10/27.
  * @version: V1.0.0.
  */
-
 public interface MovieContract {
 
     interface MovieView extends BaseView {

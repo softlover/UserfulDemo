@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">UsefulDemo</string>
+
+    <!--      有用的技术点       -->
+    <string name="mvp_text">MVP Demo</string>
+    <string name="recyclerview_text">RecyclerVieW的多功能使用</string>
+    <string name="optimizedlayout_text">优化布局</string>
+    <string name="vlayout_text">商城首页复杂布局</string>
+
+
+    <!--      其他      -->
+
 </resources>

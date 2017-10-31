@@ -10,7 +10,7 @@ import com.mydo.demo.util.CreateUtil;
  * @date: 2017/10/26.
  * @version: V1.0.0.
  */
-public abstract class BaseActivity<P extends BasePresenter/*, M extends BaseModel*/, B extends ViewDataBinding> extends DataBindingActivity<B> {
+public abstract class BaseActivity<P extends BasePresenter, B extends ViewDataBinding> extends DataBindingActivity<B> {
 
     public P mPresenter;
 //    public M mModel;
