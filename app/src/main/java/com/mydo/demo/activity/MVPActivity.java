@@ -1,15 +1,12 @@
 package com.mydo.demo.activity;
 
-import android.support.v4.content.ContextCompat;
 import android.view.View;
 
 import com.mydo.demo.R;
 import com.mydo.demo.base.BaseActivity;
-import com.mydo.demo.databinding.ActivityLayoutOptimizeBinding;
 import com.mydo.demo.databinding.ActivityMvpBinding;
 import com.mydo.demo.entity.Movie;
 import com.mydo.demo.movie.MovieContract;
-import com.mydo.demo.movie.MovieModel;
 import com.mydo.demo.movie.MoviePresenter;
 import com.mydo.demo.util.ImageUtil;
 import com.mydo.demo.util.LogUtil;

@@ -2,6 +2,8 @@ package com.mydo.demo;
 
 import android.app.Application;
 
+import com.facebook.stetho.Stetho;
+import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.mydo.demo.constant.DemoConstant;
 import com.mydo.demo.constant.UrlConstant;
 import com.mydo.demo.http.ApiService;
@@ -39,6 +41,7 @@ public class DemoApplication extends Application {
     }
 
     private void init() {
+        initStetho();
         initHttp();
     }
 
@@ -49,6 +52,7 @@ public class DemoApplication extends Application {
                 .readTimeout(DemoConstant.SERVERCONNECTTTIME, TimeUnit.SECONDS)
                 .connectTimeout(DemoConstant.SERVERCONNECTTTIME, TimeUnit.SECONDS)
                 .addInterceptor(logInterceptor)
+                .addNetworkInterceptor(new StethoInterceptor())
                 .build();
 
         retrofit = new Retrofit.Builder().baseUrl(UrlConstant.SERVERURL).addConverterFactory(GsonConverterFactory.create()).addCallAdapterFactory(RxJava2CallAdapterFactory.create()).client(okHttpClient).build();
@@ -56,5 +60,8 @@ public class DemoApplication extends Application {
         apiService = retrofit.create(ApiService.class);
     }
 
+    private void initStetho(){
+        Stetho.initializeWithDefaults(this);
+    }
 
 }
