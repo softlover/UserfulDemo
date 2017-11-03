@@ -6,8 +6,14 @@
     <string name="recyclerview_text">RecyclerVieW的多功能使用</string>
     <string name="optimizedlayout_text">优化布局</string>
     <string name="vlayout_text">商城首页复杂布局</string>
+    <string name="coordinatorlayout_text">滚动收缩布局</string>
+    <string name="design_text">design新型布局</string>
+    <string name="design_coordinator_text">嵌套滚动布局，类似商城查询列表页</string>
 
 
     <!--      其他      -->
+    <string name="header_behavior">com.mydo.demo.ui.widget.HeaderFloatBehavior</string>
+    <string name="scrool_behavior">com.mydo.demo.ui.widget.HeaderScrollingBehavior</string>
 
+    <string name="activity_sample_code">Support Design Demos</string>
 </resources>

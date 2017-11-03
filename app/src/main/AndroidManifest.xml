@@ -20,7 +20,8 @@
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -68,6 +69,35 @@
             android:name=".activity.AlibabaVlayoutActivity"
             android:configChanges="orientation"
             android:label="@string/vlayout_text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.CoordinatorActivity"
+            android:configChanges="orientation"
+            android:label="@string/coordinatorlayout_text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DesignActivity"
+            android:configChanges="orientation"
+            android:label="@string/design_text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.design.Coordinator2Activity"
+            android:configChanges="orientation"
+            android:label="@string/design_coordinator_text">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>
