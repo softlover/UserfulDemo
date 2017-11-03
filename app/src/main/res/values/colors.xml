@@ -19,4 +19,6 @@
 
     <color name="colorInitFloatBackground">#b0ffffff</color>
     <color name="colorCollapsedFloatBackground">#e4e4e4</color>
+    <color name="line_f1">#f1f1f1</color>
+
 </resources>

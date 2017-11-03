@@ -65,29 +65,11 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".activity.AlibabaVlayoutActivity"
-            android:configChanges="orientation"
-            android:label="@string/vlayout_text">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.SAMPLE_CODE"/>
-            </intent-filter>
-        </activity>
 
         <activity
-            android:name=".activity.CoordinatorActivity"
+            android:name=".activity.design.CoordinatorActivity"
             android:configChanges="orientation"
-            android:label="@string/coordinatorlayout_text">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.SAMPLE_CODE"/>
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".activity.DesignActivity"
-            android:configChanges="orientation"
-            android:label="@string/design_text">
+            android:label="@string/coordinatorlayout1_text">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>
@@ -97,7 +79,28 @@
         <activity
             android:name=".activity.design.Coordinator2Activity"
             android:configChanges="orientation"
-            android:label="@string/design_coordinator_text">
+            android:label="@string/coordinatorlayout2_text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.design.Coordinator3Activity"
+            android:configChanges="orientation"
+            android:label="@string/coordinatorlayout4_text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".activity.design.AlibabaVlayoutActivity"
+            android:configChanges="orientation"
+            android:label="@string/coordinatorlayout3_text">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>

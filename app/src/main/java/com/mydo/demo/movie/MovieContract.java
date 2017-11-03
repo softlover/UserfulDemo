@@ -17,11 +17,9 @@ public interface MovieContract {
         void setMovie(Movie movie);
     }
 
-    interface MovieModel extends BaseModel {
-        void listMovieData(int position, int type, ResultLisenter resultLisenter);
-    }
 
-    abstract class MoviePresenter extends BasePresenter</*MovieModel, */MovieView> {
+
+    abstract class MoviePresenter extends BasePresenter<MovieView> {
         public abstract void listMovieData(int position, int type);
     }
 

@@ -16,27 +16,14 @@ import io.reactivex.disposables.Disposable;
  */
 
 public class MoviePresenter extends MovieContract.MoviePresenter {
+
+
     @Override
     public void listMovieData(int position, int type) {
         final MovieContract.MovieView movieView = getView();
         if (movieView == null) {
             return;
         }
-
-       /* movieView.showLoading();
-
-        mModel.listMovieData(position, type, new ResultLisenter() {
-            @Override
-            public void onSuccess(Object obj) {
-                movieView.hideLoading();
-                movieView.setMovie((Movie) obj);
-            }
-
-            @Override
-            public void onError() {
-                movieView.hideLoading();
-            }
-        });*/
 
         RetrofitUtils.getInstance().listNewsData(2, 1).subscribe(new Observer<Movie>() {
             @Override

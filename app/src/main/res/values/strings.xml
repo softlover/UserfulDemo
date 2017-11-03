@@ -6,9 +6,11 @@
     <string name="recyclerview_text">RecyclerVieW的多功能使用</string>
     <string name="optimizedlayout_text">优化布局</string>
     <string name="vlayout_text">商城首页复杂布局</string>
-    <string name="coordinatorlayout_text">滚动收缩布局</string>
     <string name="design_text">design新型布局</string>
-    <string name="design_coordinator_text">嵌套滚动布局，类似商城查询列表页</string>
+    <string name="coordinatorlayout1_text">CoordinatorLayout(滚动收缩布局)/布局一</string>
+    <string name="coordinatorlayout2_text">CoordinatorLayout(滚动收缩布局)/布局二</string>
+    <string name="coordinatorlayout3_text">CoordinatorLayout(滚动收缩布局)/布局三</string>
+    <string name="coordinatorlayout4_text">CoordinatorLayout(滚动收缩布局)/布局四</string>
 
 
     <!--      其他      -->

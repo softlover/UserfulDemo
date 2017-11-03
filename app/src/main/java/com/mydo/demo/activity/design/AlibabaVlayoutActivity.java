@@ -1,4 +1,4 @@
-package com.mydo.demo.activity;
+package com.mydo.demo.activity.design;
 
 import android.content.Context;
 import android.graphics.Color;
