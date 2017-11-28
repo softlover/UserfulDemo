@@ -107,6 +107,16 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".activity.tab.TabMainActivity"
+            android:configChanges="orientation"
+            android:label="@string/bottomnavigationview_text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
